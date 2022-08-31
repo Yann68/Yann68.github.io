@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+}
+
+.taille_logo {
+    max-width: 200px;
+}
+
+.image {
+    object-position: 0 60%;
+}
+
+.titre_coeur {
+    justify-content: center;
+}
+
+.titre_menu  {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.coeur {
+    margin-right: 0;
+}
+
+
+/*     footer     */  
+
+.footer {
+    align-items: center;
+}
+
+.footer a {
+    font-size: 17px;
+}
+
+.logo_footer {
+    font-size: 25px;
+}
+
+.position_footer_desktop {
+    width: 70%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.footer_desktop {
+    margin-right: 50px;
+}

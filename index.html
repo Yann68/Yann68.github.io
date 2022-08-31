@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ohmyfood est un site qui repertorie les menus de restaurants gastronomiques, de plus ohmyfood permet a leurs client de composer leurs repas avant de venir,
+    fini l'attente sur place">
+
+    <link rel="stylesheet" href="css/css_accueil/style.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="css/css_accueil/accueil_tablette.css">
+    <link rel="stylesheet" media="screen and (min-width:993px)" href="css/css_accueil/accueil_desktop.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <script src="https://kit.fontawesome.com/acb61a27a1.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <title>ohmyfood</title>
+
+</head>
+<body>
+
+                                 <!-- loader-->
+    <div class="loader width_max">
+        <div class="chargement flex_center position_absolute">
+           <div class="fixe flex_center flex_column">
+                <div class="img_loader flex_center">
+                    <img class="logo_loader" src="./images/logo/ohmyfood.png" alt="logo du chargement">
+                </div>
+                    <div class="icone_loader">
+                        <i class="fa-solid fa-utensils fa-2x"></i>
+                    </div>
+            </div>  
+        </div>
+    </div>
+
+
+                                      <!--header-->
+
+    <div class="header_desktop">
+        <!-- création d'une div "header_desktop" pour regrouper logo et localisation pour la version desktop -->
+        <header>
+
+            <div class="logo flex_center width_max">
+                <img class="taille_logo " src="./images/logo/ohmyfood.png" alt="logo de ohmyfood">
+            </div>
+
+        </header>
+                                    <!--localisation-->
+
+            <div class="localisation flex_center width_max">
+                <i class="fa-solid fa-location-dot"></i>
+                    <p> Paris, Belleville </p>
+            </div>
+    </div>
+
+    <main>
+                                    <!--titre-->
+
+        <div class="titre flex_center flex_column width_max couleur_background">
+            <h2>Réservez le menu qui <br> vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <a class="boutton flex_center couleur_blanc" href="#">Explorer nos restaurants</a>
+        </div>
+
+                                    <!--le fonctionnement -->
+        <div class="main_desktop">
+        <!--création d'une div "main_desktop" pour regrouper les sections fonctionnement et restaurants pour la version desktop-->
+            <section class="fonction flex_align-item flex_column width_max">
+                <div class="titre_fonction_restaurants">
+                    <h2>Fonctionnement</h2>
+                </div>
+
+                <div class="position_boutton_fonction flex_align-item flex_column width_max">
+
+                        <div class="boutton_fonction flex_align-item couleur_background">
+                            <p class="numero_fonction flex_center couleur_blanc">1</p>
+                                <i class="icon_fonction fa-solid fa-mobile-screen-button"></i>
+                                    <p class="texte_fonction">Choisissez un restaurant </p>
+                        </div>
+
+                        <div class="boutton_fonction flex_align-item couleur_background">
+                            <p class="numero_fonction flex_center couleur_blanc">2</p>
+                                <i class="icon_fonction fa-solid fa-list-ul"></i>
+                                    <p class="texte_fonction">Composez votre menu</p>
+                        </div>
+
+                        <div class="boutton_fonction flex_align-item couleur_background">
+                            <p class="numero_fonction flex_center couleur_blanc">3</p>
+                                <i class="icon_fonction fa-solid fa-store"></i>
+                                    <p class="texte_fonction">Dégustez au restaurant</p>
+                        </div>
+                </div>
+            </section>
+
+                                <!--restaurants-->
+
+            <section class="restaurants flex_align-item flex_column width_max couleur_background">
+                <div class="titre_fonction_restaurants">
+                    <h2>Restaurants</h2>
+                </div>
+
+                <div class="position_carte_restaurants flex_align-item flex_column width_max">
+                   
+                    <div class="carte_restaurants position_relative">
+                        <a class="lien_carte" href="./Page/la_palette_du_goût.html">
+                            <img class="image_restaurants width_max" src="images/restaurants/petite/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image du restaurant la palette du goût de Menilmontant">
+                                <div class="nouveau flex_center position_absolute">Nouveau</div>
+                                    <div class="annonce_restaurants flex_align-item">
+                                        <div class="texte_carte_restaurants">
+                                            <h3>La palette du goût</h3>
+                                                <p>Ménilmontant</p>
+                                        </div>
+                                                    <div class="coeur position_relative">
+                                                        <i class="fa-regular fa-heart coeur_vide position_absolute"></i>
+                                                        <i class="fa-solid fa-heart coeur_plein position_absolute"></i>
+                                                        <div class="filtre_coeur_accueil position_absolute"></div>
+                                                    </div>
+                                    </div>
+                        </a>                
+                    </div>
+                    
+
+                    <div class="carte_restaurants position_relative">
+                        <a class="lien_carte" href="./Page/la_note_enchantee.html">
+                            <img class="image_restaurants la_note width_max" src="images/restaurants/petite/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image du restaurant la note enchantée de Charonne ">
+                                <div class="nouveau flex_center position_absolute">Nouveau</div>
+                                    <div class="annonce_restaurants flex_align-item">
+                                        <div class="texte_carte_restaurants">
+                                            <h3>La note enchantée</h3>
+                                                <p>Charonne</p>
+                                        </div>
+                                                    <div class="coeur position_relative">
+                                                        <i class="fa-regular fa-heart coeur_vide position_absolute"></i>
+                                                        <i class="fa-solid fa-heart coeur_plein position_absolute"></i>
+                                                        <div class="filtre_coeur_accueil position_absolute"></div>
+                                                    </div>
+                                    </div>
+                        </a>
+                    </div>
+
+                    <div class="carte_restaurants position_relative">
+                        <a class="lien_carte" href="./Page/a_la_francaise.html">
+                            <img class="image_restaurants width_max" src="images/restaurants/petite/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image du restaurant A la française de Cité rouge ">
+                                <div class="annonce_restaurants flex_align-item">
+                                    <div class="texte_carte_restaurants">
+                                        <h3>À la française</h3>
+                                            <p>Cité Rouge</p>
+                                    </div>
+                                                <div class="coeur position_relative">
+                                                    <i class="fa-regular fa-heart coeur_vide position_absolute"></i>
+                                                    <i class="fa-solid fa-heart coeur_plein position_absolute"></i>
+                                                    <div class="filtre_coeur_accueil position_absolute"></div>
+                                                </div>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="carte_restaurants position_relative">
+                        <a class="lien_carte" href="./Page/le_delice_des_sens.html">
+                            <img class="image_restaurants width_max" src="images/restaurants/petite/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image du restaurant Le délice des sens de Folie-Méricourt">
+                                <div class="annonce_restaurants flex_align-item">
+                                    <div class="texte_carte_restaurants">
+                                        <h3>Le délice des sens</h3>
+                                            <p>Folie-Méricourt</p>
+                                    </div>
+                                                <div class="coeur position_relative">
+                                                    <i class="fa-regular fa-heart coeur_vide position_absolute"></i>
+                                                    <i class="fa-solid fa-heart coeur_plein position_absolute"></i>
+                                                    <div class="filtre_coeur_accueil position_absolute"></div>
+                                                </div>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </div>
+    </main>
+
+                            <!--footer-->
+
+    <footer class="width_max">
+    
+        <div class="footer flex_column">
+            <p class="logo_footer couleur_blanc">ohmyfood</p>
+                <div class="position_footer_desktop">
+                    <div class="footer_desktop">
+                        <!--création d'une div footer_desktop pour la version desktop-->
+                        <div class="proposer_restaurant flex_align-item">
+                            <i class="couleur_blanc fa-solid fa-utensils"></i>
+                                <a class="lien_footer couleur_blanc" href="#">
+                                    Proposer un restaurant
+                                </a>
+                        </div>
+                        <div class="partenaire_restaurant flex_align-item">
+                            <i class="couleur_blanc fa-solid fa-handshake-angle"></i>
+                                <a class="lien_footer couleur_blanc" href="#">
+                                    Devenir partenaire
+                                </a>
+                        </div>
+                    </div>
+                        <div class="footer_desktop flex_column">
+                            <!--création d'une div footer_desktop pour la version desktop-->
+                                <a class="lien_footer couleur_blanc" href="#">
+                                    Mentions légales
+                                </a>
+                                    <a class="lien_footer couleur_blanc" href="mailto:">
+                                        Contact
+                                    </a>
+                        </div>  
+            </div>              
+        </div>
+    </footer>
+</body>
+</html>

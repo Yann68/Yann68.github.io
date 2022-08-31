@@ -1,0 +1,331 @@
+/*    réglage de toute la page   */
+
+
+body {
+    margin: 0 ;
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+}
+
+
+
+      /*  classes  */
+
+a {
+    text-decoration: none;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.justify_center_column {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.flex_align-item {
+    display: flex;
+    align-items: center;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.width_max {
+    width: 100%;
+}
+
+.couleur_blanc {
+    color: white;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.position_absolute {
+    position: absolute;
+}
+
+.couleur_background {
+    background-color: rgb(245, 245, 245);
+}
+
+
+/*   header    */
+
+.logo {
+    height: 60px;
+}
+
+.scroll {
+    color: black;
+    left: 5%;
+    font-size: 20px;
+}
+
+.taille_logo {
+    width: 45%;
+    max-width: 169px;
+    margin-top: 5px;
+}
+
+/*    images     */ 
+
+.francaise {
+    height: 271px;
+    object-fit: cover;
+}
+
+.note {
+    height: 275px;
+    object-fit: cover;
+}
+
+.palette {
+    height: 275px;
+    object-fit: cover;
+}
+
+.delice {
+    height: 275px;
+    object-fit: cover;
+}
+
+/*  section menu     */
+
+.carte_menu:hover h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.carte_menu:hover .texte_carte p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.carte_menu:hover .texte_carte {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 30px 0px 0 8px;
+}
+
+.titre_coeur {
+    justify-content: center;
+    border-radius: 40px 40px 0 0 ;
+    top: -57px;
+}
+
+.position_titre_coeur {
+    justify-content: space-between;
+    max-width: 350px;
+}
+
+.titre_repas p {
+    margin: 0 0 5px 0;
+}
+
+.titre_repas {
+    font-size: 16px;
+    width: 92%;
+    max-width: 329px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top : 20px;
+}
+
+.bordure {
+    width: 42px;
+    height: 3px;
+    background-color: #99e2d0;
+}
+
+
+            /*    le coeur    */
+
+.coeur_page {
+    margin-top: 23px;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    font-size: 27px;
+    margin-right: 15px;
+}
+
+.coeur_plein_page {
+    width: 27px;
+    height: 27px;
+    z-index: 1;
+    background: linear-gradient(to left, #9356dc, #ff79da);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.coeur_vide_page {
+    width: 27px;
+    height: 27px;
+    z-index: 3;
+    transition: all 400ms ease-in-out;
+}
+
+.filtre_coeur_page {
+    height: 27px;
+    width: 27px;  
+    z-index: 2; 
+    transition: all 400ms ease-in-out;
+    transform: scaleY(1);
+}
+
+.coeur_page:hover .filtre_coeur_page {
+    margin-top: -25px;
+    transform: scaleY(0);
+}
+
+.coeur_page:hover .coeur_vide_page {
+    opacity: 0;
+}
+
+
+    /*   carte menu   */
+
+
+.position_menu {
+    margin-top: -45px;
+}
+
+.carte_menu {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 15px -13px black;
+}
+
+.carte_menu_differente .prix{
+    margin-top: 40px;
+}
+
+.prix {
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 11px;
+}
+
+.texte_carte p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.texte_carte {
+    margin-left: 10px;
+}
+
+/*   case qui apparait sur la droite de la carte menu */
+
+.validation {
+    width: 60px;
+    min-height: 69px;
+    background-color: #99e2d0;
+    border-radius: 0 15px 15px 0;
+    right: 0;
+}    
+
+.validation_differente {
+    height: 92px;
+}
+
+.fa-circle-check {
+    z-index: 2;
+    color: #99e2d0;
+    font-size: 25px;
+}
+
+.filtre_cercle {
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+}
+
+/*  bouton  */
+
+.boutton {
+    width: 48%;
+    max-width: 190px;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    box-shadow: 0px 4px 15px -8px black;
+}
+
+
+/*       footer      */
+
+
+.lien_footer {
+    margin: 0 0 7px 0;
+}
+
+footer {
+    background-color: rgb(72, 72, 72);
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.footer {
+    margin-left: 25px;
+}
+
+.logo_footer {
+    margin-top: 0;
+    font-size: 18px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.fa-handshake-angle, .fa-utensils {
+    margin-right: 10px;
+    margin-bottom: 3px;
+    font-size: 12px;
+}
+
+.fa-utensils {
+    margin-right: 14px;
+}

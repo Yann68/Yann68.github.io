@@ -1,0 +1,151 @@
+body {
+    margin: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.titre h2 {
+    margin-top: 5px;
+}
+
+/*     header et localisation    */
+
+.header_desktop {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.logo {
+    margin-left: 20px;
+    box-shadow: none;
+}
+
+.taille_logo {
+    width: 225px;
+}
+
+.localisation {
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px -8px black;
+}
+
+/*      titre       */
+
+br {
+    display: none;
+}
+
+.titre h2 {
+    font-size: 40px;
+}
+
+.titre p {
+    font-size: 25px;
+}
+
+.boutton:hover {
+    box-shadow: 2px 4px 15px -2px black;
+    opacity: 80%;
+}
+
+/*      sections fonctionnement et restaurants     */
+
+.main_desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px -4px 15px -13px black;
+    border-radius: 40px 40px 0 0;
+    padding-bottom: 40px;
+}
+
+.fonction {
+    max-height: 400px;
+    margin: 30px 20px 0 20px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    width: 80%;
+    max-width: none;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 20px -12px black;
+}
+
+.restaurants {
+    max-width: 1500px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.restaurants h2 {
+    margin-bottom: 30px;
+}
+
+.titre_fonction_restaurants {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    max-width: none;
+    width: 100%;
+}
+
+.titre_fonction_restaurants h2 {
+    font-size: 32px;
+}
+
+.position_carte_restaurants {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carte_restaurants {
+    margin: 0 20px 20px 0;
+    max-width: 500px;
+    width: 45%;
+}
+
+.nouveau {
+    font-size: 15px;
+    height: 30px;
+    width: 70px;
+}
+
+.position_boutton_fonction {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row
+}
+
+/*     footer     */  
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer a {
+    font-size: 20px;
+}
+
+.logo_footer {
+    font-size: 28px;
+}
+
+.position_footer_desktop {
+    width: 70%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.footer_desktop {
+    margin-right: 50px;
+}
+
+.lien_footer:hover {
+    text-decoration: underline;
+}

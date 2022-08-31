@@ -1,0 +1,135 @@
+
+/* animation du loader  */
+
+.loader {
+    transform: scale(1);
+    animation: disparait 3s linear forwards;
+}
+
+.chargement {
+    animation: rotation 1s linear infinite forwards;
+
+}
+
+@keyframes disparait {
+    from {
+        opacity: 1;
+}
+    to {
+        opacity: 0;
+        visibility: hidden;
+}
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0turn);
+}
+
+    to {
+        transform: rotate(1turn) ;
+}
+}
+
+
+/* animation des cartes menus */
+
+/* animation du défilement des carte   */
+
+.apparition1 {
+    transform-origin: bottom;
+    animation: apparition 500ms linear;
+}
+
+.apparition2 {
+    transform-origin: bottom;
+    animation: apparition 1000ms linear;
+}
+
+.apparition3 {
+    transform-origin: bottom;
+    animation: apparition 1500ms linear;
+}
+
+.apparition4 {
+    transform-origin: bottom;
+    animation: apparition 2000ms linear;
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*   animation du decalage des cartes menus  */
+
+.validation {
+    transform-origin: right;
+    transform: scaleX(0);
+}   
+
+.carte_menu:hover .validation {
+    animation: validation 500ms linear both;
+}
+
+@keyframes validation {
+    0% {
+        transform: scaleX(0);
+    }
+
+    60% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+/*  animation du cercle qui tourne */
+
+.carte_menu:hover .fa-circle-check {
+    animation: rotation 300ms linear;
+}
+
+@keyframes rotation {
+    from {
+        min-height: 27px;
+        transform: rotate(0);
+    }
+
+    to {
+        min-height: 27px;
+        transform: rotate(1turn);
+    }
+    
+}
+
+/*   animation du decalage du textes des cartes menu  */
+
+.carte_menu:hover .prix {
+    transform-origin: right;
+    animation: prix_decaler 300ms linear both;
+}
+
+@keyframes prix_decaler {
+    from {
+        margin-left: 10px;
+    }
+
+    to {
+        margin-right: 90px;
+        margin-left: 20px;
+    }
+}
